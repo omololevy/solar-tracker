@@ -6,6 +6,13 @@ This Project is based on the principle that at any geographical position on the 
 
 
 ## Sample plot:
-This sample has been taken on date 25-08-2022 1911hrs
-Note: No sun, it's evening.<br>
+This sample has been taken on date 25-08-2022 1911hrs.<br>
+Note: 
+* No sun, it's evening.<br><br>
 ![Figure1](plt_images/Figure_1.png)
+
+## How to run this project.
+* First, clone this repository / fork then clone this repo.
+* I recommend installing the packages in a virtual environment using pip.
+* Activate the virtual environment
+* run `python main.py` or `python3 main.py`
