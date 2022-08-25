@@ -16,3 +16,23 @@ def get_inputs(args):
 		LO: longitude in decimal format
 		city
 	'''
+
+	# if there is city input, it will override LA, LO input
+	if args.city == None:
+		LA = -1.286389 #Latitude, decimal degrees -90 to 90
+		LO = 36.817223 #Longitude, decimal degrees -180 to 180 
+		city = 'Nairobi, KE'
+		print('Using default location: {city}, Lat: {LA}, Lon: {LO}')
+	else:
+		city = args.city
+		geolocator = geocoders.Nominatim(user_agent='Sun')  #geopy city->LA,LO locator
+		location = geolocator.geocode(city)
+		if location == None:
+			print('Error with city input!, Kindly check.')
+			exit()
+		LA = location.latitude
+		LO = location.longitude
+		print('Using city input:', location)
+		print(f'Lat: {LA}', 'Lon: {LO}')
+
+	
