@@ -3,7 +3,8 @@ import datetime as dt
 import numpy as np
 from numpy import sin,cos,arctan,arccos
 
-def sun_coords(date_time_local, LA, LO):
+
+def sun_coordinates(date_time_local, LA, LO):
 	'''
 	Purpose: Calculate sun angles from time and position on earth
 	Inputs 
