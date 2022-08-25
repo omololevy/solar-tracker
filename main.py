@@ -14,7 +14,7 @@ def main(args):
 	print('Theta from North =', Theta_from_North)
 	print('Phi from Horizon =', Phi_from_Horizon)
 
-	make_3D_plot(Theta, Phi, Theta_from_North, Phi_from_Horizon, date_time_local, LA, LO, city, args.save_plot)
+	make_3D_plot.make_3D_plot(Theta, Phi, Theta_from_North, Phi_from_Horizon, date_time_local, LA, LO, city, args.save_plot)
 
 
 
