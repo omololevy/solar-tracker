@@ -84,7 +84,7 @@ def make_3D_plot(Theta, Phi, Theta_from_North, Phi_from_Horizon, date_time_local
 	for hour in hourspan:
 		for minute in minutespan:
 			time = time.replace(minute = minute, hour=hour)
-			Theta, Phi, Theta_from_North, Phi_from_horizon = sun_coordinates(time, LA, LO)
+			Theta, Phi, Theta_from_North, Phi_from_horizon = sun_coordinates.sun_coordinates(time, LA, LO)
 			if Phi < np.pi/2: #only plot if sun is above horizon
 				X = cos(Theta)*sin(Phi)
 				Y = sin(Theta)*sin(Phi)
