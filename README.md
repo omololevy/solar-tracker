@@ -6,10 +6,16 @@ This Project is based on the principle that at any geographical position on the 
 
 
 ## Sample plot:
+
+### Sample 1
 This sample has been taken on date 25-08-2022 1911hrs.<br>
 Note: 
 * No sun, it's evening.<br><br>
 ![Figure1](plt_images/Figure_1.png)
+
+### Sample 2
+* This sample has been taken on date 30-08-2022 1724hrs.
+ ![Figure1](plt_images/Figure_2.png)<br>
 
 ## How to run this project.
 * First, clone this repository / fork then clone this repo.
